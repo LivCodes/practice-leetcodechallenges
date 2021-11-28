@@ -27,3 +27,13 @@ Constraints:
 
 
 */
+
+const findNumbers = (nums) => {
+    let count = 0;
+    nums.forEach(element => {
+        if(element.toString().length % 2 === 0) count++;
+    })
+    return count;
+};
+
+// Set a counter variable and for each element in array, if the amount of digits are even increase counter by 1. return count
